@@ -1,4 +1,4 @@
-org: flauta
+inorg: flauta
 service: api-alumnos
 
 provider:
@@ -36,7 +36,7 @@ functions:
     handler: EliminarAlumnos.lambda_handler
     events:
       - http:
-          path: /alumnos/listar
+          path: /alumnos/eliminar
           method: delete
           cors: true
           integration: lambda  

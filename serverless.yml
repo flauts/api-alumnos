@@ -1,4 +1,4 @@
-inorg: flauta
+org: flauta
 service: api-alumnos
 
 provider:

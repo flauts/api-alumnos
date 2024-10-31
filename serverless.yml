@@ -37,7 +37,7 @@ functions:
     events:
       - http:
           path: /alumnos/listar
-          method: post
+          method: delete
           cors: true
           integration: lambda  
   modificar:

@@ -1,5 +1,3 @@
-import json
-
 import boto3
 
 def lambda_handler(event, context):
@@ -9,7 +7,6 @@ def lambda_handler(event, context):
     # Proceso
     dynamodb = boto3.resource('dynamodb')
     table = dynamodb.Table('t_alumnos')
-    
     response = table.get_item(
         Key={
             'tenant_id': tenant_id,
@@ -21,4 +18,3 @@ def lambda_handler(event, context):
         'statusCode': 200,
         'response': response
     }
-
